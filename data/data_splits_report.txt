@@ -1,0 +1,9 @@
+summary of processed datasets (GoEmotions train,val, IMDb test)
+
+train.json: 20484 samples (pos: 13270 / neg: 7214)
+val.json: 5121 samples (pos: 3318 / neg: 1803)
+test.json: 25000 samples (pos: 12500 / neg: 12500)
+avg text length: train=12.8 tokens, test=224.5 tokens
+shortest and longest texts in each split:
+train length range: 1 - 31 tokens
+test length range: 4 - 2192 tokens

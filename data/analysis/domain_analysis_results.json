@@ -1,0 +1,880 @@
+{
+  "train": {
+    "label_stats": {
+      "total": 20484,
+      "positive": 13270,
+      "negative": 7214,
+      "positive_ratio": 0.6478226908806873,
+      "negative_ratio": 0.3521773091193126
+    },
+    "length_stats": {
+      "count": 20484,
+      "min": 1,
+      "max": 31,
+      "mean": 13.327084553798086,
+      "median": 13.0,
+      "std": 6.9134766660395846,
+      "q1": 8.0,
+      "q3": 19.0,
+      "p90": 23.0
+    },
+    "length_bucket_stats": {
+      "0_20": 16706,
+      "21_50": 3778,
+      "51_100": 0,
+      "101_200": 0,
+      "201_plus": 0,
+      "0_20_ratio": 0.8155633665299746,
+      "21_50_ratio": 0.1844366334700254,
+      "51_100_ratio": 0.0,
+      "101_200_ratio": 0.0,
+      "201_plus_ratio": 0.0
+    },
+    "label_conditioned_length_stats": {
+      "positive": {
+        "count": 13270,
+        "mean": 13.018010550113036,
+        "median": 13.0,
+        "min": 1,
+        "max": 31
+      },
+      "negative": {
+        "count": 7214,
+        "mean": 13.895619628500139,
+        "median": 14.0,
+        "min": 1,
+        "max": 31
+      }
+    },
+    "vocab_stats": {
+      "total_tokens": 272992,
+      "unique_tokens": 17002,
+      "type_token_ratio": 0.06228021333958504,
+      "top_20": [
+        [
+          "i",
+          11167
+        ],
+        [
+          "the",
+          8175
+        ],
+        [
+          "to",
+          5830
+        ],
+        [
+          "a",
+          5770
+        ],
+        [
+          "you",
+          5691
+        ],
+        [
+          "it",
+          5250
+        ],
+        [
+          "that",
+          4697
+        ],
+        [
+          "and",
+          4307
+        ],
+        [
+          "is",
+          3887
+        ],
+        [
+          "s",
+          3561
+        ],
+        [
+          "this",
+          3383
+        ],
+        [
+          "of",
+          3316
+        ],
+        [
+          "name",
+          3301
+        ],
+        [
+          "for",
+          3017
+        ],
+        [
+          "t",
+          2775
+        ],
+        [
+          "in",
+          2545
+        ],
+        [
+          "my",
+          2004
+        ],
+        [
+          "so",
+          1851
+        ],
+        [
+          "but",
+          1846
+        ],
+        [
+          "was",
+          1815
+        ]
+      ],
+      "hapax_count": 8882,
+      "hapax_ratio": 0.5224091283378426,
+      "avg_token_frequency": 16.056463945418187
+    },
+    "style_stats": {
+      "avg_char_length": 68.11545596563171,
+      "avg_sentence_count": 1.4897480960749854,
+      "avg_exclamation_count": 0.24428822495606328,
+      "avg_question_count": 0.06756492872485842,
+      "avg_uppercase_ratio": 0.05606711278848994,
+      "avg_digit_ratio": 0.002590384414359676,
+      "avg_punctuation_ratio": 0.0496859253342548
+    }
+  },
+  "val": {
+    "label_stats": {
+      "total": 5121,
+      "positive": 3318,
+      "negative": 1803,
+      "positive_ratio": 0.6479203280609256,
+      "negative_ratio": 0.3520796719390744
+    },
+    "length_stats": {
+      "count": 5121,
+      "min": 1,
+      "max": 35,
+      "mean": 13.253270845537982,
+      "median": 13,
+      "std": 6.938828143944482,
+      "q1": 7.0,
+      "q3": 18.0,
+      "p90": 23.0
+    },
+    "length_bucket_stats": {
+      "0_20": 4205,
+      "21_50": 916,
+      "51_100": 0,
+      "101_200": 0,
+      "201_plus": 0,
+      "0_20_ratio": 0.821128685803554,
+      "21_50_ratio": 0.178871314196446,
+      "51_100_ratio": 0.0,
+      "101_200_ratio": 0.0,
+      "201_plus_ratio": 0.0
+    },
+    "label_conditioned_length_stats": {
+      "positive": {
+        "count": 3318,
+        "mean": 12.89089813140446,
+        "median": 12.0,
+        "min": 1,
+        "max": 35
+      },
+      "negative": {
+        "count": 1803,
+        "mean": 13.920133111480865,
+        "median": 14,
+        "min": 2,
+        "max": 30
+      }
+    },
+    "vocab_stats": {
+      "total_tokens": 67870,
+      "unique_tokens": 7887,
+      "type_token_ratio": 0.11620745542949756,
+      "top_20": [
+        [
+          "i",
+          2793
+        ],
+        [
+          "the",
+          1923
+        ],
+        [
+          "to",
+          1486
+        ],
+        [
+          "a",
+          1484
+        ],
+        [
+          "you",
+          1447
+        ],
+        [
+          "it",
+          1312
+        ],
+        [
+          "that",
+          1125
+        ],
+        [
+          "and",
+          1044
+        ],
+        [
+          "is",
+          1040
+        ],
+        [
+          "this",
+          848
+        ],
+        [
+          "s",
+          846
+        ],
+        [
+          "of",
+          830
+        ],
+        [
+          "name",
+          798
+        ],
+        [
+          "for",
+          738
+        ],
+        [
+          "t",
+          691
+        ],
+        [
+          "in",
+          598
+        ],
+        [
+          "my",
+          498
+        ],
+        [
+          "so",
+          479
+        ],
+        [
+          "but",
+          438
+        ],
+        [
+          "was",
+          434
+        ]
+      ],
+      "hapax_count": 4533,
+      "hapax_ratio": 0.5747432483834157,
+      "avg_token_frequency": 8.605299860529986
+    },
+    "style_stats": {
+      "avg_char_length": 67.66608084358523,
+      "avg_sentence_count": 1.4895528217145089,
+      "avg_exclamation_count": 0.24995118140988087,
+      "avg_question_count": 0.05760593634055849,
+      "avg_uppercase_ratio": 0.053809642881576435,
+      "avg_digit_ratio": 0.002420801564833604,
+      "avg_punctuation_ratio": 0.05015720011629376
+    }
+  },
+  "test": {
+    "label_stats": {
+      "total": 25000,
+      "positive": 12500,
+      "negative": 12500,
+      "positive_ratio": 0.5,
+      "negative_ratio": 0.5
+    },
+    "length_stats": {
+      "count": 25000,
+      "min": 6,
+      "max": 2303,
+      "mean": 232.72032,
+      "median": 175.0,
+      "std": 171.6761796496475,
+      "q1": 128.0,
+      "q3": 282.0,
+      "p90": 452.0
+    },
+    "length_bucket_stats": {
+      "0_20": 17,
+      "21_50": 588,
+      "51_100": 2459,
+      "101_200": 11565,
+      "201_plus": 10371,
+      "0_20_ratio": 0.00068,
+      "21_50_ratio": 0.02352,
+      "51_100_ratio": 0.09836,
+      "101_200_ratio": 0.4626,
+      "201_plus_ratio": 0.41484
+    },
+    "label_conditioned_length_stats": {
+      "positive": {
+        "count": 12500,
+        "mean": 232.95856,
+        "median": 174.0,
+        "min": 10,
+        "max": 2303
+      },
+      "negative": {
+        "count": 12500,
+        "mean": 232.48208,
+        "median": 177.0,
+        "min": 6,
+        "max": 1124
+      }
+    },
+    "vocab_stats": {
+      "total_tokens": 5818008,
+      "unique_tokens": 74954,
+      "type_token_ratio": 0.012883103632721028,
+      "top_20": [
+        [
+          "the",
+          331075
+        ],
+        [
+          "and",
+          160251
+        ],
+        [
+          "a",
+          159803
+        ],
+        [
+          "of",
+          143525
+        ],
+        [
+          "to",
+          132370
+        ],
+        [
+          "is",
+          103738
+        ],
+        [
+          "it",
+          94365
+        ],
+        [
+          "in",
+          92773
+        ],
+        [
+          "i",
+          87884
+        ],
+        [
+          "this",
+          74951
+        ],
+        [
+          "that",
+          70570
+        ],
+        [
+          "s",
+          61393
+        ],
+        [
+          "was",
+          47386
+        ],
+        [
+          "as",
+          44802
+        ],
+        [
+          "movie",
+          43905
+        ],
+        [
+          "with",
+          43230
+        ],
+        [
+          "for",
+          43109
+        ],
+        [
+          "but",
+          40920
+        ],
+        [
+          "film",
+          39526
+        ],
+        [
+          "you",
+          34854
+        ]
+      ],
+      "hapax_count": 28437,
+      "hapax_ratio": 0.37939269418576727,
+      "avg_token_frequency": 77.62104757584652
+    },
+    "style_stats": {
+      "avg_char_length": 1269.59212,
+      "avg_sentence_count": 13.02756,
+      "avg_exclamation_count": 0.984,
+      "avg_question_count": 0.64976,
+      "avg_uppercase_ratio": 0.02831361582820804,
+      "avg_digit_ratio": 0.0025812978614116106,
+      "avg_punctuation_ratio": 0.0320071169679853
+    },
+    "oov_stats_against_train": {
+      "target_total_tokens": 5818008,
+      "target_unique_tokens": 74954,
+      "oov_unique_tokens": 61442,
+      "oov_total_occurrences": 483942,
+      "oov_unique_ratio": 0.8197294340528858,
+      "oov_token_ratio": 0.08318001625298556,
+      "top_20_oov_words": [
+        [
+          "hollywood",
+          1776
+        ],
+        [
+          "michael",
+          1206
+        ],
+        [
+          "robert",
+          1074
+        ],
+        [
+          "david",
+          1047
+        ],
+        [
+          "shown",
+          1035
+        ],
+        [
+          "cinematography",
+          959
+        ],
+        [
+          "dialog",
+          899
+        ],
+        [
+          "suspense",
+          861
+        ],
+        [
+          "filmed",
+          854
+        ],
+        [
+          "george",
+          809
+        ],
+        [
+          "peter",
+          750
+        ],
+        [
+          "imdb",
+          723
+        ],
+        [
+          "premise",
+          697
+        ],
+        [
+          "sequences",
+          689
+        ],
+        [
+          "richard",
+          675
+        ],
+        [
+          "oscar",
+          664
+        ],
+        [
+          "credits",
+          662
+        ],
+        [
+          "whom",
+          644
+        ],
+        [
+          "superb",
+          628
+        ],
+        [
+          "screenplay",
+          606
+        ]
+      ]
+    }
+  },
+  "train_test_overlap": {
+    "train_vocab_size": 17002,
+    "test_vocab_size": 74954,
+    "shared_vocab_size": 13512,
+    "train_only_vocab_size": 3490,
+    "test_only_vocab_size": 61442,
+    "train_vocab_overlap_ratio": 0.7947300317609693,
+    "test_vocab_overlap_ratio": 0.18027056594711424,
+    "jaccard_overlap": 0.1722502677068992,
+    "top_20_train_only": [
+      [
+        "0001",
+        1
+      ],
+      [
+        "000k",
+        1
+      ],
+      [
+        "10001",
+        1
+      ],
+      [
+        "100t",
+        1
+      ],
+      [
+        "10eth",
+        1
+      ],
+      [
+        "10m",
+        1
+      ],
+      [
+        "10mcg",
+        1
+      ],
+      [
+        "114",
+        1
+      ],
+      [
+        "12000",
+        1
+      ],
+      [
+        "120k",
+        1
+      ],
+      [
+        "12am",
+        1
+      ],
+      [
+        "12k",
+        1
+      ],
+      [
+        "13yr",
+        1
+      ],
+      [
+        "1400",
+        1
+      ],
+      [
+        "1440",
+        1
+      ],
+      [
+        "1500m",
+        1
+      ],
+      [
+        "15m",
+        1
+      ],
+      [
+        "15mg",
+        1
+      ],
+      [
+        "160s",
+        1
+      ],
+      [
+        "16m",
+        1
+      ]
+    ],
+    "top_20_test_only": [
+      [
+        "00000000000",
+        1
+      ],
+      [
+        "00000001",
+        1
+      ],
+      [
+        "000dm",
+        1
+      ],
+      [
+        "001",
+        1
+      ],
+      [
+        "0069",
+        1
+      ],
+      [
+        "007",
+        1
+      ],
+      [
+        "0079",
+        1
+      ],
+      [
+        "007s",
+        1
+      ],
+      [
+        "0083",
+        1
+      ],
+      [
+        "009",
+        1
+      ],
+      [
+        "00am",
+        1
+      ],
+      [
+        "00o",
+        1
+      ],
+      [
+        "00s",
+        1
+      ],
+      [
+        "00schneider",
+        1
+      ],
+      [
+        "0126",
+        1
+      ],
+      [
+        "0148",
+        1
+      ],
+      [
+        "0230",
+        1
+      ],
+      [
+        "02year",
+        1
+      ],
+      [
+        "03",
+        1
+      ],
+      [
+        "039",
+        1
+      ]
+    ],
+    "top_train_only_words": [
+      [
+        "fucking",
+        242
+      ],
+      [
+        "reddit",
+        100
+      ],
+      [
+        "subreddit",
+        43
+      ],
+      [
+        "upvote",
+        42
+      ],
+      [
+        "username",
+        39
+      ],
+      [
+        "downvoted",
+        36
+      ],
+      [
+        "fucked",
+        26
+      ],
+      [
+        "2019",
+        25
+      ],
+      [
+        "downvote",
+        23
+      ],
+      [
+        "smh",
+        22
+      ],
+      [
+        "instagram",
+        21
+      ],
+      [
+        "app",
+        18
+      ],
+      [
+        "fuckin",
+        18
+      ],
+      [
+        "2016",
+        17
+      ],
+      [
+        "cakeday",
+        17
+      ],
+      [
+        "trolling",
+        16
+      ],
+      [
+        "upvotes",
+        15
+      ],
+      [
+        "repost",
+        13
+      ],
+      [
+        "2018",
+        12
+      ],
+      [
+        "upvoted",
+        12
+      ]
+    ],
+    "top_test_only_words": [
+      [
+        "hollywood",
+        1776
+      ],
+      [
+        "michael",
+        1206
+      ],
+      [
+        "robert",
+        1074
+      ],
+      [
+        "david",
+        1047
+      ],
+      [
+        "shown",
+        1035
+      ],
+      [
+        "cinematography",
+        959
+      ],
+      [
+        "dialog",
+        899
+      ],
+      [
+        "suspense",
+        861
+      ],
+      [
+        "filmed",
+        854
+      ],
+      [
+        "george",
+        809
+      ],
+      [
+        "peter",
+        750
+      ],
+      [
+        "imdb",
+        723
+      ],
+      [
+        "premise",
+        697
+      ],
+      [
+        "sequences",
+        689
+      ],
+      [
+        "richard",
+        675
+      ],
+      [
+        "oscar",
+        664
+      ],
+      [
+        "credits",
+        662
+      ],
+      [
+        "whom",
+        644
+      ],
+      [
+        "superb",
+        628
+      ],
+      [
+        "screenplay",
+        606
+      ]
+    ]
+  },
+  "domain_summary": {
+    "test_vs_train_mean_length_ratio": 17.46220781151096,
+    "test_vs_train_unique_token_ratio": 4.408540171744501,
+    "vocab_jaccard_overlap": 0.1722502677068992,
+    "test_oov_token_ratio_against_train": 0.08318001625298556,
+    "test_oov_unique_ratio_against_train": 0.8197294340528858,
+    "test_vs_train_sentence_count_ratio": 8.744807282736925,
+    "test_vs_train_punctuation_ratio": 0.6441888070446932
+  }
+}

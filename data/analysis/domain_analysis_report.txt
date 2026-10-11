@@ -1,0 +1,210 @@
+domain analysis report
+
+train label distribution
+total: 20484
+positive: 13270 (0.6478)
+negative: 7214 (0.3522)
+
+
+val label distribution
+total: 5121
+positive: 3318 (0.6479)
+negative: 1803 (0.3521)
+
+
+test label distribution
+total: 25000
+positive: 12500 (0.5000)
+negative: 12500 (0.5000)
+
+
+train length statistics
+count: 20484
+min: 1
+max: 31
+mean: 13.33
+median: 13.00
+std: 6.91
+q1: 8.00
+q3: 19.00
+p90: 23.00
+
+
+val length statistics
+count: 5121
+min: 1
+max: 35
+mean: 13.25
+median: 13.00
+std: 6.94
+q1: 7.00
+q3: 18.00
+p90: 23.00
+
+
+test length statistics
+count: 25000
+min: 6
+max: 2303
+mean: 232.72
+median: 175.00
+std: 171.68
+q1: 128.00
+q3: 282.00
+p90: 452.00
+
+
+train length bucket statistics
+0_20: 16706 (0.8156)
+21_50: 3778 (0.1844)
+51_100: 0 (0.0000)
+101_200: 0 (0.0000)
+201_plus: 0 (0.0000)
+
+
+val length bucket statistics
+0_20: 4205 (0.8211)
+21_50: 916 (0.1789)
+51_100: 0 (0.0000)
+101_200: 0 (0.0000)
+201_plus: 0 (0.0000)
+
+
+test length bucket statistics
+0_20: 17 (0.0007)
+21_50: 588 (0.0235)
+51_100: 2459 (0.0984)
+101_200: 11565 (0.4626)
+201_plus: 10371 (0.4148)
+
+
+train label conditioned length statistics
+positive_count: 13270
+positive_mean: 13.02
+positive_median: 13.00
+positive_min: 1
+positive_max: 31
+negative_count: 7214
+negative_mean: 13.90
+negative_median: 14.00
+negative_min: 1
+negative_max: 31
+
+
+val label conditioned length statistics
+positive_count: 3318
+positive_mean: 12.89
+positive_median: 12.00
+positive_min: 1
+positive_max: 35
+negative_count: 1803
+negative_mean: 13.92
+negative_median: 14.00
+negative_min: 2
+negative_max: 30
+
+
+test label conditioned length statistics
+positive_count: 12500
+positive_mean: 232.96
+positive_median: 174.00
+positive_min: 10
+positive_max: 2303
+negative_count: 12500
+negative_mean: 232.48
+negative_median: 177.00
+negative_min: 6
+negative_max: 1124
+
+
+train vocabulary statistics
+total_tokens: 272992
+unique_tokens: 17002
+type_token_ratio: 0.062280
+hapax_count: 8882
+hapax_ratio: 0.522409
+avg_token_frequency: 16.056464
+top_20_words: i:11167, the:8175, to:5830, a:5770, you:5691, it:5250, that:4697, and:4307, is:3887, s:3561, this:3383, of:3316, name:3301, for:3017, t:2775, in:2545, my:2004, so:1851, but:1846, was:1815
+
+
+val vocabulary statistics
+total_tokens: 67870
+unique_tokens: 7887
+type_token_ratio: 0.116207
+hapax_count: 4533
+hapax_ratio: 0.574743
+avg_token_frequency: 8.605300
+top_20_words: i:2793, the:1923, to:1486, a:1484, you:1447, it:1312, that:1125, and:1044, is:1040, this:848, s:846, of:830, name:798, for:738, t:691, in:598, my:498, so:479, but:438, was:434
+
+
+test vocabulary statistics
+total_tokens: 5818008
+unique_tokens: 74954
+type_token_ratio: 0.012883
+hapax_count: 28437
+hapax_ratio: 0.379393
+avg_token_frequency: 77.621048
+top_20_words: the:331075, and:160251, a:159803, of:143525, to:132370, is:103738, it:94365, in:92773, i:87884, this:74951, that:70570, s:61393, was:47386, as:44802, movie:43905, with:43230, for:43109, but:40920, film:39526, you:34854
+
+
+train text style statistics
+avg_char_length: 68.12
+avg_sentence_count: 1.49
+avg_exclamation_count: 0.24
+avg_question_count: 0.07
+avg_uppercase_ratio: 0.056067
+avg_digit_ratio: 0.002590
+avg_punctuation_ratio: 0.049686
+
+
+val text style statistics
+avg_char_length: 67.67
+avg_sentence_count: 1.49
+avg_exclamation_count: 0.25
+avg_question_count: 0.06
+avg_uppercase_ratio: 0.053810
+avg_digit_ratio: 0.002421
+avg_punctuation_ratio: 0.050157
+
+
+test text style statistics
+avg_char_length: 1269.59
+avg_sentence_count: 13.03
+avg_exclamation_count: 0.98
+avg_question_count: 0.65
+avg_uppercase_ratio: 0.028314
+avg_digit_ratio: 0.002581
+avg_punctuation_ratio: 0.032007
+
+
+vocabulary overlap statistics
+train_vocab_size: 17002
+test_vocab_size: 74954
+shared_vocab_size: 13512
+train_only_vocab_size: 3490
+test_only_vocab_size: 61442
+train_vocab_overlap_ratio: 0.794730
+test_vocab_overlap_ratio: 0.180271
+jaccard_overlap: 0.172250
+top_train_only_words: fucking:242, reddit:100, subreddit:43, upvote:42, username:39, downvoted:36, fucked:26, 2019:25, downvote:23, smh:22, instagram:21, app:18, fuckin:18, 2016:17, cakeday:17, trolling:16, upvotes:15, repost:13, 2018:12, upvoted:12
+top_test_only_words: hollywood:1776, michael:1206, robert:1074, david:1047, shown:1035, cinematography:959, dialog:899, suspense:861, filmed:854, george:809, peter:750, imdb:723, premise:697, sequences:689, richard:675, oscar:664, credits:662, whom:644, superb:628, screenplay:606
+
+
+test oov statistics against train
+target_total_tokens: 5818008
+target_unique_tokens: 74954
+oov_unique_tokens: 61442
+oov_total_occurrences: 483942
+oov_unique_ratio: 0.819729
+oov_token_ratio: 0.083180
+top_20_oov_words: hollywood:1776, michael:1206, robert:1074, david:1047, shown:1035, cinematography:959, dialog:899, suspense:861, filmed:854, george:809, peter:750, imdb:723, premise:697, sequences:689, richard:675, oscar:664, credits:662, whom:644, superb:628, screenplay:606
+
+
+domain shift summary
+test_vs_train_mean_length_ratio: 17.462208
+test_vs_train_unique_token_ratio: 4.408540
+vocab_jaccard_overlap: 0.172250
+test_oov_token_ratio_against_train: 0.083180
+test_oov_unique_ratio_against_train: 0.819729
+test_vs_train_sentence_count_ratio: 8.744807
+test_vs_train_punctuation_ratio: 0.644189

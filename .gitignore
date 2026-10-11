@@ -1,0 +1,13 @@
+data/cache/
+data/__pycache__/
+__pycache__/
+*.pyc
+###best_model/
+models/distilbert-finetuned/best_model/checkpoints/
+
+checkpoints/
+
+venv/
+
+wandb/
+test.txt
