@@ -34,20 +34,12 @@ From the team report. Precision/recall/F1 are for the positive class.
 
 Two numbers that are easy to confuse: **F1 0.929 / accuracy 0.908 is on the in-domain GoEmotions validation split**, while **F1 0.77 / accuracy 0.75 is the same fine-tuned model on IMDb**. The best system overall was the zero-shot DistilBERT-SST2, not a fine-tuned model.
 
-## Design notes and likely interview questions
+## Notes on the numbers
 
-**Why did the fine-tuned DistilBERT do worse than zero-shot on IMDb?** Domain shift. Training data is GoEmotions: Reddit comments averaging about 13 tokens (max 31), mapped to binary labels. IMDb reviews average about 225 tokens (up to 2,192) and often mix praise and criticism. The SST-2 zero-shot model was pre-fine-tuned on movie reviews, so it was already in-domain. The team report reached the same conclusion; I did not run an extra experiment (e.g. fine-tuning on a subset of IMDb) to confirm it.
-
-**Is F1 0.929 impressive?** Treat it carefully: the validation split is 65% positive (3,318 positive / 1,803 negative), so the positive-class F1 of a model that predicts "positive" for everything would already be about 0.79. The accuracy of 0.908 is the more informative figure. The label set also drops neutral/ambiguous emotions (neutral, confusion, curiosity, surprise, realization), which makes the in-domain task easier than real-world sentiment.
-
-**How was the label mapping built?** GoEmotions' emotion labels are grouped into 12 positive and 11 negative emotions; an example is kept only if it has positive *or* negative emotions but not both, so neutral-only and mixed-polarity comments are discarded (`data/label_mapping.py`).
-
-**Why a grid search with only 4 runs?** It is a 2×2 grid (2 learning rates × 2 epoch counts) around standard DistilBERT settings, run on Colab. It is a modest tuning pass, not an exhaustive one: batch size, warm-up and max length were not searched.
-
-**What would you change?** Inputs are truncated at 128 tokens (`MAX_LENGTH`) while IMDb reviews average about 225, which is a likely contributing factor I did not isolate. I would add a small IMDb validation set for model selection, test longer/chunked inputs, report macro-F1 and accuracy alongside positive-class F1, and run several seeds.
-
-**What did you learn about teamwork here?** Agreeing an interface early (`FinetunedPredictor`: text in, label + confidence out) let teammates build the demo, batch inference and evaluation in parallel before my weights were final.
-
+- **F1 0.929 / accuracy 0.908 is on the in-domain GoEmotions validation split** (65% positive: 3,318 positive / 1,803 negative); the same fine-tuned model scores F1 0.77 / accuracy 0.75 on IMDb. The best system overall was the zero-shot DistilBERT-SST2.
+- **Domain shift:** training comments average about 13 tokens (max 31); IMDb reviews average about 225 tokens, and inputs are truncated at 128 tokens (`MAX_LENGTH`). The team report attributes the gap to domain mismatch; I did not run a separate experiment to isolate it.
+- **Label mapping:** GoEmotions emotions are grouped into 12 positive and 11 negative classes; an example is kept only if it has positive or negative emotions but not both, so neutral-only and mixed-polarity comments are discarded (`data/label_mapping.py`).
+- **Sweep scope:** a 2×2 grid (learning rate × epochs) run on Colab; batch size, warm-up and max length were not searched.
 
 > Reproducibility status: the commands below come from the team's README. Pinned versions are in `requirements.txt` (Python 3.10/3.11). I have not re-run the whole pipeline on a clean machine for this copy; fine-tuning is meant for a GPU (the sweep was run on Google Colab) and needs `wandb login` for sweeps. `data/train.json` and `data/val.json` are included; `python -m data.build_dataset` regenerates all splits (including the 25,000-review IMDb test file) from Hugging Face datasets.
 
